@@ -1,0 +1,147 @@
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap');
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'DM Sans',sans-serif;}
+.port{max-width:680px;padding:0 0 3rem;}
+nav{display:flex;justify-content:space-between;align-items:center;padding:1.5rem 0 2.5rem;border-bottom:0.5px solid var(--color-border-tertiary);}
+.nav-name{font-family:'DM Serif Display',serif;font-size:1.2rem;color:var(--color-text-primary);}
+.nav-links{display:flex;gap:1.5rem;}
+.nav-links a{font-size:13px;color:var(--color-text-secondary);text-decoration:none;letter-spacing:0.04em;}
+.nav-links a:hover{color:var(--color-text-primary);}
+.hero{padding:3.5rem 0 3rem;}
+.tag{display:inline-block;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-text-info);background:var(--color-background-info);padding:4px 12px;border-radius:20px;margin-bottom:1.2rem;}
+.hero h1{font-family:'DM Serif Display',serif;font-size:2.8rem;line-height:1.15;color:var(--color-text-primary);margin-bottom:1rem;}
+.hero p{font-size:1rem;color:var(--color-text-secondary);line-height:1.75;max-width:520px;}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:2.5rem;}
+.stat{background:var(--color-background-secondary);border-radius:var(--border-radius-lg);padding:1.1rem 1rem;}
+.stat-num{font-family:'DM Serif Display',serif;font-size:1.8rem;color:var(--color-text-primary);}
+.stat-lbl{font-size:12px;color:var(--color-text-secondary);margin-top:2px;}
+.divider{border:none;border-top:0.5px solid var(--color-border-tertiary);margin:2.5rem 0;}
+.section-label{font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--color-text-tertiary);margin-bottom:1.5rem;}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;}
+.about-card{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:1.25rem;}
+.about-card h3{font-size:14px;font-weight:500;color:var(--color-text-primary);margin-bottom:.5rem;}
+.about-card p{font-size:13px;color:var(--color-text-secondary);line-height:1.65;}
+.skills-wrap{display:flex;flex-wrap:wrap;gap:10px;}
+.skill-pill{display:flex;align-items:center;gap:8px;padding:8px 16px;border:0.5px solid var(--color-border-tertiary);border-radius:30px;font-size:13px;color:var(--color-text-primary);background:var(--color-background-primary);}
+.skill-pill i{font-size:16px;color:var(--color-text-info);}
+.skill-pill.cert{border-color:#B5D4F4;background:#E6F1FB;color:#0C447C;}
+.skill-pill.cert i{color:#185FA5;}
+.contact-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.contact-card{display:flex;align-items:center;gap:12px;padding:1rem 1.1rem;border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);background:var(--color-background-primary);}
+.contact-icon{width:36px;height:36px;border-radius:50%;background:var(--color-background-secondary);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.contact-icon i{font-size:17px;color:var(--color-text-secondary);}
+.contact-meta p{font-size:12px;color:var(--color-text-tertiary);}
+.contact-meta span{font-size:13px;color:var(--color-text-primary);font-weight:500;}
+.hire-btn{margin-top:1.5rem;display:inline-flex;align-items:center;gap:8px;padding:12px 28px;background:var(--color-text-primary);color:var(--color-background-primary);border-radius:30px;font-size:14px;font-weight:500;cursor:pointer;border:none;}
+.hire-btn i{font-size:15px;}
+</style>
+
+<div class="port">
+  <nav>
+    <span class="nav-name">Manoj S.</span>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="tag"><i class="ti ti-map-pin" style="font-size:11px;vertical-align:-1px" aria-hidden="true"></i> Chennai, India</div>
+    <h1>Economics Graduate<br>turned Cloud & DevOps<br>Professional</h1>
+    <p>B.A. Economics from Vels University · 2 years of executive experience · AWS & DevOps certified. Bridging analytical thinking with modern cloud technology.</p>
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-num">2+</div>
+        <div class="stat-lbl">Years Experience</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">2</div>
+        <div class="stat-lbl">Certifications</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">UG</div>
+        <div class="stat-lbl">B.A. Economics</div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" id="about">
+
+  <section>
+    <p class="section-label">About me</p>
+    <div class="about-grid">
+      <div class="about-card">
+        <h3><i class="ti ti-school" style="font-size:16px;vertical-align:-2px;margin-right:6px" aria-hidden="true"></i>Education</h3>
+        <p>B.A. Economics from Vels University. Strong analytical foundation in data interpretation, economic modelling, and research methodology.</p>
+      </div>
+      <div class="about-card">
+        <h3><i class="ti ti-briefcase" style="font-size:16px;vertical-align:-2px;margin-right:6px" aria-hidden="true"></i>Experience</h3>
+        <p>2 years as an Executive, gaining hands-on expertise in operations, coordination, and professional communication in a corporate setting.</p>
+      </div>
+      <div class="about-card" style="grid-column:1/-1;">
+        <h3><i class="ti ti-award" style="font-size:16px;vertical-align:-2px;margin-right:6px" aria-hidden="true"></i>Certifications</h3>
+        <p>AWS Certified professional and DevOps certified — skilled in cloud infrastructure, CI/CD pipelines, containerization, and modern deployment practices.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" id="skills">
+
+  <section>
+    <p class="section-label">Skills & expertise</p>
+    <div class="skills-wrap">
+      <div class="skill-pill cert"><i class="ti ti-cloud" aria-hidden="true"></i>AWS Cloud</div>
+      <div class="skill-pill cert"><i class="ti ti-settings-automation" aria-hidden="true"></i>DevOps</div>
+      <div class="skill-pill cert"><i class="ti ti-ship" aria-hidden="true"></i>CI/CD Pipelines</div>
+      <div class="skill-pill cert"><i class="ti ti-cube" aria-hidden="true"></i>Docker / Containers</div>
+      <div class="skill-pill"><i class="ti ti-chart-bar" aria-hidden="true"></i>Economic Analysis</div>
+      <div class="skill-pill"><i class="ti ti-table" aria-hidden="true"></i>Data Interpretation</div>
+      <div class="skill-pill"><i class="ti ti-users" aria-hidden="true"></i>Team Coordination</div>
+      <div class="skill-pill"><i class="ti ti-file-description" aria-hidden="true"></i>Report Writing</div>
+      <div class="skill-pill"><i class="ti ti-presentation" aria-hidden="true"></i>Presentations</div>
+      <div class="skill-pill"><i class="ti ti-brand-git" aria-hidden="true"></i>Git / Version Control</div>
+    </div>
+  </section>
+
+  <hr class="divider" id="contact">
+
+  <section>
+    <p class="section-label">Get in touch</p>
+    <div class="contact-row">
+      <div class="contact-card">
+        <div class="contact-icon"><i class="ti ti-mail" aria-hidden="true"></i></div>
+        <div class="contact-meta">
+          <p>Email</p>
+          <span>manoj@email.com</span>
+        </div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon"><i class="ti ti-brand-linkedin" aria-hidden="true"></i></div>
+        <div class="contact-meta">
+          <p>LinkedIn</p>
+          <span>linkedin.com/in/manoj</span>
+        </div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon"><i class="ti ti-phone" aria-hidden="true"></i></div>
+        <div class="contact-meta">
+          <p>Phone</p>
+          <span>+91 XXXXX XXXXX</span>
+        </div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon"><i class="ti ti-map-pin" aria-hidden="true"></i></div>
+        <div class="contact-meta">
+          <p>Location</p>
+          <span>Chennai, Tamil Nadu</span>
+        </div>
+      </div>
+    </div>
+    <button class="hire-btn" onclick="sendPrompt('Help me write a professional summary for Manoj S. to add to this portfolio')">
+      <i class="ti ti-sparkles" aria-hidden="true"></i> Generate professional summary ↗
+    </button>
+  </section>
+</div>
